@@ -2,7 +2,7 @@ import ast
 from Province import *
 from Country import *
 
-country_name_list = ['aus','eng','fra','ger','ita','rus','tur']
+country_name_list = ['Aus','Eng','Fra','Ger','Ita','Rus','Tur']
 
 country_list = []
 
@@ -16,8 +16,9 @@ def main(provinces):
     # Ex. Ankara's type is "coast_home_supply_tur" so it gets added to "tur" country object, or Turkey
     for province in provinces:
         for country in country_list:
-            if country.get_name() in province.get_type():
+            if country.get_name().lower() in province.get_type():
                 country.add_province(province)
+                province.set_country(country.get_name())
 
     return country_list
 

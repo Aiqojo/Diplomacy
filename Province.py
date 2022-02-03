@@ -58,11 +58,11 @@ class Province:
         self.country = country
 
     def __repr__(self):
-        return (self.name + ' ' + self.type + ' ' + self.abbr +
-                ' ' + self.country + '\n')
+        return (self.name + ' | ' + self.type + ' | ' +
+                self.country + '\n')
     def __str__(self):
-        return (self.name + ' ' + self.type + ' ' + self.abbr +
-                ' ' + self.country + '\n')
+        return (self.name + ' | ' + self.type + ' | ' +
+                self.country + '\n')
 
 
 

@@ -22,7 +22,7 @@ class Country:
         self.name = name
 
     def __repr__(self):
-        return (self.name + ' ' + self.provinces + '\n')
+        return (self.name + '\n' + self.get_provinces() + '\n')
     def __str__(self):
-        return (self.name + ' ' + self.provinces + '\n')
+        return (self.name + '\n' + self.get_provinces() + '\n')
 
