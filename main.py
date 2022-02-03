@@ -1,12 +1,16 @@
-import initialize
-import province
+import initialize_provinces
+import initialize_countries
+import Province
 
 def main():
 
-    province_list = initialize.main()
+    # Creating list of province objects from "province_list.csv"
+    provinces = initialize_provinces.main()
 
+    # Creating list of country objects
+    countries = initialize_countries.main(provinces)
 
-
+    
 
 
 

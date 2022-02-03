@@ -1,4 +1,4 @@
-from province import *
+from Province import *
 
 class Country:
 
@@ -16,10 +16,13 @@ class Country:
         self.provinces.remove(province)
 
     def get_name(self):
-        print(self.name)
+        return self.name
 
     def set_name(self, name):
         self.name = name
 
-
+    def __repr__(self):
+        return (self.name + ' ' + self.provinces + '\n')
+    def __str__(self):
+        return (self.name + ' ' + self.provinces + '\n')
 

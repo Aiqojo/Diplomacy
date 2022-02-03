@@ -1,4 +1,4 @@
-class province:
+class Province:
 
     #abbr = abbreviation
 
@@ -37,10 +37,10 @@ class province:
 
     def __repr__(self):
         return (self.name + ' ' + self.type + ' ' + self.abbr +
-                ' ' + self.country)
+                ' ' + self.country + '\n')
     def __str__(self):
         return (self.name + ' ' + self.type + ' ' + self.abbr +
-                ' ' + self.country)
+                ' ' + self.country + '\n')
 
 
 

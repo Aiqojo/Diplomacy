@@ -1,4 +1,4 @@
-next((province for province in province_list if province.abbr == "bal"), None)
+next((country for country in country_list if country.name == "aus"), None)
 
 
 
