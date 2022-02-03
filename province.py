@@ -25,6 +25,14 @@ class Province:
     def get_info(self):
         return (self.name, self.type, self.abbr, self.country)
 
+    def get_unit(self):
+        if self.army:
+            return "army"
+        elif self.ship:
+            return "ship"
+        else:
+            return "none"
+
     def get_name(self):
         return (self.name)
 
