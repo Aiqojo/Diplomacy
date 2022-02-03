@@ -1,3 +1,5 @@
+from province import *
+
 class Country:
 
     def __init__(self, name, provinces):
@@ -5,7 +7,7 @@ class Country:
         self.provinces = provinces
 
     def get_provinces(self):
-        print(''.join(str(province) for province in self.provinces))
+        return (''.join(str(province) for province in self.provinces))
 
     def add_province(self, province):
         self.provinces.append(province)

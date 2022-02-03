@@ -1,14 +1,9 @@
 import initialize
+import province
 
 def main():
 
     province_list = initialize.main()
-
-    for provinces in province_list:
-        print(provinces)
-
-
-
 
 
 
