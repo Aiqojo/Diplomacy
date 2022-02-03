@@ -28,7 +28,10 @@ class province:
     def set_abbr(self, abbr):
         self.abbr = abbr
 
-    
+    def __repr__(self):
+        return (self.name + ' ' + self.type + ' ' + self.abbr)
+    def __str__(self):
+        return (self.name + ' ' + self.type + ' ' + self.abbr)
 
 
 

@@ -1,4 +1,11 @@
-import initializing
+import initialize
+
+def main():
+
+    province_list = initialize.main()
+
+    for provinces in province_list:
+        print(provinces)
 
 
 
@@ -18,10 +25,5 @@ import initializing
 
 
 
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
