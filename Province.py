@@ -12,8 +12,6 @@ class Province:
         self.can_ship = True
         self.supply = False
 
-        if 'land' in self.type:
-            can_ship = False
         if 'army' in self.type:
             army = True
         if 'ship' in self.type:
@@ -21,6 +19,11 @@ class Province:
         if 'supply' in self.type:
             supply = True
 
+        if 'land' in self.type:
+            can_ship = False
+
+        if 'supply' in self.type:
+            supply = True
 
     def get_info(self):
         return (self.name, self.type, self.abbr, self.country)
@@ -32,6 +35,20 @@ class Province:
             return "ship"
         else:
             return "none"
+
+    def set_unit(self, unit):
+        if not self.army or not self.ship:
+            if unit == 'army':
+                self.army = True
+            elif unit == 'ship':
+                self.ship = True
+
+
+    def set_can_ship(self, bool):
+        self.can_ship = bool
+
+    def get_can_ship(self):
+        return self.can_ship
 
     def get_name(self):
         return (self.name)
